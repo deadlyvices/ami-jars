@@ -1,9 +1,34 @@
 # ami-jars
 point releases of ami executables (normally as maven-appassembler jar-with-dependencies)
 
-## structure
+## directories
 Releases are named with the date (e.g. `ami20190109`). Each is a directory with two subdirectories `bin` and `repo` created by the Maven 
-`appassembler` plugi. The structure is:
+`appassembler` plugin and also a single `jar-with-dependencies`. (These are alternative waus of running the software). The `appassembler` method is more cistomised as it deals with classpaths, etc.
+
+### appassembler 
+Create a suitable software directory (e.g. `mysoftware` or in `/usr/bin`) on you machine and clone the repository into it. Your structure will be as below (`bin` and `repo`). You will be running scripts from the `bin` directory. 
+You will need to set your PATH (not CLASSPATH) to the `bin` directory, e.g. on UNIX/MacOSX:
+```
+export PATH="/Users/pm286/mysoftware/ami20190109/bin:$PATH"
+```
+Test this with 
+```
+which ami-pdf
+```
+If the path points correctly then you should see a pathname. If not there will be an error message.
+Now you can run the program:
+```
+ami-pdf
+```
+which should give you a help message. Further details are in the `ami` documentation
+
+
+
+
+
+
+### structure
+The structure is:
 ```
 ami20190109/
 ```
