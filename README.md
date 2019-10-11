@@ -3,7 +3,7 @@ point releases of ami executables (normally as maven-appassembler jar-with-depen
 
 ## directories
 Releases are named with the date (e.g. `ami20190109`). Each is a directory with two subdirectories `bin` and `repo` created by the Maven 
-`appassembler` plugin and also a single `jar-with-dependencies`. (These are alternative waus of running the software). The `appassembler` method is more cistomised as it deals with classpaths, etc.
+`appassembler` plugin and also a single `jar-with-dependencies`. (These are alternative ways of running the software). The `appassembler` method is more customised as it deals with classpaths, etc.
 
 ### appassembler 
 Create a suitable software directory (e.g. `mysoftware` or in `/usr/bin`) on you machine and clone the repository into it. Your structure will be as below (`bin` and `repo`). You will be running scripts from the `bin` directory. 
